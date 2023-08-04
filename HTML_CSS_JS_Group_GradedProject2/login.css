@@ -1,0 +1,46 @@
+body {
+    background-color:dimgrey;
+}
+
+.container{
+    height: 360px;
+    align-content: flex-start;
+    width: 360px;
+    border: 2px solid;
+    background-color: yellow;
+    border-radius: 6px;
+    margin-left: 35%;
+    margin-top: 15%;
+    margin-bottom: 1%;
+    margin-right: 30%;
+}
+
+.container label{
+    padding-left: 120px;
+    font-size: 30px;
+    
+    
+}
+
+.container input{
+    
+    font-size: 30px;
+    margin-left: 10%;
+    margin-right: 10% ;
+    margin-top: 0.5%;
+    width: 270px;
+    text-align: left;
+    
+}
+
+.container button{
+    width: 90px;
+    font-size: 25px;
+    margin-left: 40%;
+    margin-right: 10% ;
+}
+.container p{
+    font-size: 25px;
+    margin-left: 20%;
+    margin-right: 10% ;
+}

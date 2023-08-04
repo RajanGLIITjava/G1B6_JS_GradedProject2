@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List of Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+ 
+
+    <script type = "text/javascript" >
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+
+</head>
+<body>
+    <div class="Search-Box">
+        <div class="filter">
+            <div class="filter-text"></div>
+            <input type="text" id="filter-jobs" placeholder="Search Resume">
+        </div>
+        <!-- <button onclick="nextData(-6, -6)">Previous</button>
+        <button onclick="nextData(6, 6)">Next</button> -->
+
+        <button class="Previous-btn" id="Previous-btn" onclick="clickPrevious()">Previous</button>
+        <button class="slide-btn" id="slide-btn" onclick="clickNext()">next</button>
+
+        <button class="find-resume-btn" id="filter-jobs" onclick="searchDB()">Find Resume</button>
+    </div>
+
+
+    <div class="job-container">
+        <div class="job-tiles">
+            <div class="card" id="resume-list">
+                <div class="card-icons">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="job-basics">
+                </div>
+                <div class="job-skill">
+                </div>
+                <div class="job-work">
+                </div>
+                <div class="job-internship">  
+                </div>
+                <div class="job-projects">
+                </div>
+                <div class="Education">
+                </div>
+                <div class="job-achievements">
+                </div>
+                <div class="job-interests">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+    <script src="./search.js"></script>
+    <script src="./nextPrevious.js"></script>
+    </body>
+</html>

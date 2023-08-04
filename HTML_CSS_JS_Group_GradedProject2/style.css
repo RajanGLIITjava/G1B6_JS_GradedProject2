@@ -1,0 +1,106 @@
+
+.Search-Box{
+    display: flex;
+    justify-content: flex-start;
+    height: 90px;
+    border: 2px;
+    margin: 0 auto;
+    align-items: center;
+    width: 1000px;
+}
+.filter{
+    display: flex;
+    border: 2px;
+    width: 65%;
+    padding-bottom: 3px;
+    padding-left: 12px;
+    margin-left: 5%;
+    
+}
+
+.Search-Box .filter .filter-text{
+margin-left: 4%;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+color: black;
+font-size :20px;
+width :180px;
+}
+.Search-Box .filter-text input{
+    width: 96%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    margin-left: 2%;
+    margin-right: 2%;
+    color: white;
+    font-size: 140%;
+    outline: none;
+}
+
+.Search-Box .btn-container{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkblue;
+    width: 14%;  
+    height: 100%;  
+}
+.Search-Box .btn-container:hover{
+    background: blue;
+    cursor: pointer;
+}
+.find-resume-btn{
+    background-color: rgba(18, 18, 224, 0.8222);
+    width: 15%;
+    height: 65%;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: white;
+    margin-left:4%;
+    cursor: pointer;
+}
+find-resume-btn:hover{
+    transform: scale(1.10);
+    transition: all .5s ease;
+    background-color: rgba(30,30,255);
+    border: 2px solid;
+}
+
+.job-container{
+    width: 1200px;
+    border: 5px solid;
+    margin: 0 auto;
+    height: auto;
+}
+
+.job-tiles{
+    display: grid;
+}
+
+.card{
+    height: auto;
+    align-content: flex-start;
+    width: 1180px;
+    border: 2px solid;
+    border-radius: 6px;
+    margin-left: 0.6%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-right: 1%;
+}
+.job-tiles .card:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+
+}
+
+.card .card-icons .fa-solid fa-user{
+    display: block;
+}
+

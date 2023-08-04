@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="main" href="main.css">
+  <link rel="stylesheet" href="login.css">
+  
+  <script type = "text/javascript" >
+    function preventBack() { window.history.forward(); }
+    setTimeout("preventBack()", 0);
+    window.onunload = function () { null };
+    </script>
+</head>
+<body>
+  <div class="container">
+    <form onsubmit="loginFunc()">
+
+        <label for="username">Username</label><br>
+        <input type="text" name="username" id="username"><br>
+
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password"><br>
+
+        <hr>
+        <button type="submit">Login</button>
+        <p id="result">Welcome, Login...</p>
+
+    </form>
+  </div>
+  <script src="./main.js"></script>
+  
+  <script type="text/javascript">
+    $(document).ready(function() {
+        window.history.pushState(null, "", window.location.href);        
+        window.onpopstate = function() {
+            window.history.pushState(null, "", window.location.href);
+        };
+    });
+</script>
+</body>
+</html>
